@@ -21,7 +21,7 @@ jx:
 service:
   name: test2-bbb
   type: ClusterIP
-  externalPort: 80
+  externalPort: 8080
   internalPort: 8080
   annotations: {}
   # Add labels to the service
