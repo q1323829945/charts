@@ -39,3 +39,5 @@ spec:
     secretName: "tls-{{ .Values.jxRequirements.ingress.domain | replace "." "-" }}-p"
 {{- else }}
     secretName: "tls-{{ .Values.jxRequirements.ingress.domain | replace "." "-" }}-s"
+{{- end }}
+{{- end }}
