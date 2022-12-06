@@ -19,7 +19,7 @@ jx:
   releaseCRD: true
   
 service:
-  name: test2-bbb
+  name: test2
   type: ClusterIP
   externalPort: 8080
   internalPort: 8080
