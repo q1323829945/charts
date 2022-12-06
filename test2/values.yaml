@@ -62,7 +62,7 @@ canary:
   gatewayLabels: {}
 
 service:
-  name: test2
+  name: test2-okok
   type: ClusterIP
   externalPort: 80
   internalPort: 8080
