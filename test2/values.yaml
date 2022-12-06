@@ -22,7 +22,7 @@ service:
   name: test2-bbb
   type: ClusterIP
   externalPort: 80
-  internalPort: 8765
+  internalPort: 8080
   annotations: {}
   # Add labels to the service
   labels: {}
