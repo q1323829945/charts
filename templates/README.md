@@ -8,9 +8,7 @@ name: your repository name
 
 ### Makefile
 
-```
-NAME := your repository name
+NAME := **your repository name**
 
-	sed -i -e "s|repository:.*|repository: $(DOCKER_REGISTRY)\/(your registry org name\/test2)|" values.yaml
-```
+sed -i -e "s|repository:.*|repository: $(DOCKER_REGISTRY)\/**(your registry org name)**\/**(your repository name)**|" values.yaml
 
