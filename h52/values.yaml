@@ -9,7 +9,7 @@ podAnnotations: {}
 image:
   repository: draft
   tag: dev
-  pullPolicy: IfNotPresent
+  pullPolicy: Always
 
 # optional list of image pull secrets to use to pull images
 jx:
