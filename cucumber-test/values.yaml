@@ -29,9 +29,9 @@ service:
   internalPort: 8102
   annotations: {}
    # add dapr config
-   # dapr.io/enabled: "true"
-   # dapr.io/app-id: "saas-app-platform-management"
-   # dapr.io/app-port: "8081"
+    dapr.io/enabled: "true"
+    dapr.io/app-id: "app-gateway"
+    dapr.io/app-port: "8102"
   # Add labels to the service
   labels: {}
 
