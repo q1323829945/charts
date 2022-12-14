@@ -3,7 +3,10 @@
 # Declare variables to be passed into your templates.
 replicaCount: 1
 # Add annotations to the pods
-podAnnotations: {}
+podAnnotations: 
+  dapr.io/enabled: "true"
+  dapr.io/app-id: "app-loan-management"
+  dapr.io/app-port: "8071"
 
 # do nothing
 image:
@@ -24,14 +27,10 @@ service:
   name: cucumber-test
   type: ClusterIP
   # your service port 
-  externalPort: 8102
+  externalPort: 8071
   # your service targetPort
-  internalPort: 8102
-  annotations: 
-   # add dapr config
-    dapr.io/enabled: "true"
-    dapr.io/app-id: "app-gateway"
-    dapr.io/app-port: "8102"
+  internalPort: 8071
+  annotations: {}
   # Add labels to the service
   labels: {}
 

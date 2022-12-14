@@ -4,6 +4,10 @@
 replicaCount: 1
 # Add annotations to the pods
 podAnnotations: {}
+ # add dapr config
+ # dapr.io/enabled: "true"
+ # dapr.io/app-id: "saas-app-platform-management"
+ # dapr.io/app-port: "8081"
 
 # do nothing
 image:
@@ -28,10 +32,6 @@ service:
   # your service targetPort
   internalPort: 8080
   annotations: {}
-   # add dapr config
-   # dapr.io/enabled: "true"
-   # dapr.io/app-id: "saas-app-platform-management"
-   # dapr.io/app-port: "8081"
   # Add labels to the service
   labels: {}
 
