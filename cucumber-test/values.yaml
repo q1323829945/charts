@@ -35,6 +35,7 @@ service:
   labels: {}
 
 ingress:
+  name: loan-management
   annotations: {}
   # defaults to nginx if no other ingress class annotation specified
   classAnnotation: ""

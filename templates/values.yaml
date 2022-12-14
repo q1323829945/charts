@@ -36,6 +36,7 @@ service:
   labels: {}
 
 ingress:
+  name: xxxx
   annotations: {}
   # defaults to nginx if no other ingress class annotation specified
   classAnnotation: ""
