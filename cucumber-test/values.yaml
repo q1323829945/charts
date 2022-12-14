@@ -27,11 +27,11 @@ service:
   externalPort: 8102
   # your service targetPort
   internalPort: 8102
-  annotations: {}
+  annotations: 
    # add dapr config
-   # dapr.io/enabled: "true"
-   # dapr.io/app-id: "app-gateway"
-   # dapr.io/app-port: "8102"
+    dapr.io/enabled: "true"
+    dapr.io/app-id: "app-gateway"
+    dapr.io/app-port: "8102"
   # Add labels to the service
   labels: {}
 
